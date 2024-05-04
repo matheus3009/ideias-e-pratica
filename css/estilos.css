@@ -1,0 +1,37 @@
+*{box-sizing: border-box;}
+
+:root{
+    ---cor-escura: rgb(0, 0, 0);
+    --cor-intermediaria: rgb(22, 22, 22);
+    --cor-clara: white;
+}
+.links-menu{
+    list-style: none;
+    display: none;
+}
+
+.links-menu.aberto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+
+header{
+    background-color: var(--cor-intermediaria);
+    color: var(--cor-clara);
+    z-index: 100;
+    top: 0;
+    position: sticky;
+    width: 100;
+    padding: 20px;
+
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+}
+
