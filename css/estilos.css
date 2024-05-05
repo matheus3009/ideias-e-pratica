@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+
 *{box-sizing: border-box;}
+
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 :root{
     ---cor-escura: rgb(0, 0, 0);
     --cor-intermediaria: rgb(22, 22, 22);
     --cor-clara: white;
 }
+
+body, h1, h2, h3, p, figure, nav, ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: var(---cor-escura);
+    color: var(--cor-clara);
+    
+}
+
 .links-menu{
     list-style: none;
     display: none;
@@ -33,5 +55,60 @@ header{
 header div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+h1{font-family: Sedan-SC;}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+h2{
+    color: red;
+    padding: 20px;
+}
+h3{
+    color: red;
+    padding: 10px;
+}
+
+figure{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+img{
+    border: solid red;
+    margin: auto;
+}
+
+hr{
+    display: none;
+}
+
+p{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+b{
+    color: red;
+}
+
+ul li{
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer{
+    background-color: var(--cor-intermediaria);
+    font-weight: bold;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
